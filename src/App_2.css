@@ -1,0 +1,253 @@
+:root {
+  font-family: var(--title);
+  font-weight: 300;
+  overflow-x: hidden;
+  background-color: lightgray;
+  scroll-behavior: smooth;
+
+  --letter-spacing: -2px;
+  --off-black: #222;
+  --off-white: #FAFCFD;
+  --content-blue: rgb(10, 8, 52);
+  --title: 'roboto', sans-serif;
+  --line-break: 1px solid #222;
+  
+}
+
+  body {
+    margin: 0
+  }
+  
+  .title {
+    margin-bottom:0px;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--content-blue);
+    letter-spacing: var(--letter-spacing);
+  }
+  
+  .title-white {
+    color: var(--off-white);
+  }
+  
+  .sub-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--content-blue);
+    letter-spacing: var(--letter-spacing);
+  }
+  
+  .sub-title-white {
+    color: var(--off-white)
+  }
+  
+  
+  .content {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: var(--off-black);
+    line-height:28px;
+  }
+  
+  .content-white {
+    color: var(--off-white)
+  }
+  
+  .main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--off-white)
+  }
+  
+  .top-navigation {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .nav-items-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right: 40px;
+    background-color: var(--off-white);
+    height: 80px;
+  }
+  .top-navigation ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .top-navigation a {
+    text-decoration: none;
+    color: var(--off-black);
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 24px;
+  }
+  
+  .top-navigation a:hover {
+    border-bottom: 3px solid lightcoral;
+  }
+  
+  .hero-sub-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  
+  .projects-sub-title {
+    margin-bottom: 50px;
+  }
+  
+  .hero-container {
+    align-items: center; 
+  }
+  
+  .content-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .project-container {
+    display:flex;
+    margin-bottom: 100px;
+    background-color: var(--off-white);
+  }
+  
+  .projects-container, .work-history-container {
+    height: 100%;
+  }
+  
+  .projects-content-container {
+    padding-top: 150px;
+  }
+  
+  .work-history-container {
+    padding-bottom: 150px;
+  }
+  
+  .projects-container, .education-container {
+    background-color: var(--content-blue);
+  }
+  
+  .work-history-content-container {
+    padding-top: 180px;
+  }
+  
+  .project-content {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right:30px;
+    width: 50%
+  }
+  
+  .project-technologies {
+    display: flex;
+    padding-left: 0px;
+  }
+  
+  .project-technologies li {
+    list-style-type: none;
+    margin-right: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: var(--title)
+  
+  }
+  .project-title {
+    text-transform: uppercase;
+    font-family: var(--title);
+    margin-top: 30px;
+  }
+  
+  .img-container {
+    width: 100%;
+  }
+  
+  .button-link {
+    text-decoration: none;
+  }
+  
+  .year {
+    font-weight: 600;
+  }
+  
+  .job-description {
+    padding-bottom: 40px;
+    border-bottom: var(--line-break);
+  }
+  
+  .work-sub-title, .education-sub-title {
+  
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .work-sub-title {
+    border-bottom: var(--line-break);
+  }
+  
+  .h2-white {
+    color: var(--off-white);
+  }
+  
+  .education-sub-title {
+    padding-bottom: 80px;
+  }
+  
+  .school-year {
+    padding-bottom: 80px;
+  }
+  
+  .school-h2, .subject-h2, .school-year {
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+  
+  .linkedin:visited {
+    color: var(--off-black)
+  }
+  .linkedin:hover {
+    color: #0a66c2;
+  }
+  
+  .mail {
+    color: var(--off-black);
+  }
+  
+  .mail:hover {
+    color: red;
+  }
+
+@media (max-width: 1400px) {
+  .project-container {
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+.project-card {
+  width: 85%;
+}
+
+.img-container {
+  max-width: 100%;
+
+}
+
+.img-container img {
+  max-width: 100%;
+}
+
+.project-content {
+  width: 85%;
+}
+
+}
+

@@ -1,38 +1,330 @@
-.App {
-  text-align: center;
+:root {
+  font-family: var(--content);
+  font-weight: 300;
+  overflow-x: hidden;
+  background-color:var(--off-white);
+  scroll-behavior: smooth;
+  margin: 0;
+
+  --letter-spacing: -2px;
+  --off-black: #473335;
+  --off-white: #FAFCFD;
+  --secondary-color: #CDC2AE;
+  --content-blue: #354259;
+  --button: #CDC2AE;
+    --title: 'roboto', sans-serif;
+  --content: 'Merriweather', serif;
+  --line-break: 1px solid #222;
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0; padding: 0; border: 0; box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  line-height: 1.5em;
+}
+
+.title {
+  font-size: 34px;
+  line-height: 2.5em;
+  font-family: var(--title);
+}
+
+.title, .sub-title, .content, .job-role, .company {
+  color: var(--content-blue);
+}
+
+.title-white, .sub-title-white, .content-white, .projects-container, .school, .subject, .side-nav a, .top-navigation a {
+  color: var(--off-white);
+}
+
+.sub-title {
+  font-family: var(--title);
+}
+
+img {
+  max-width: 100%;
+}
+
+.top-navigation {
+  display: none;
+}
+
+.hero-main-title, .projects-title {
+  margin-bottom: 10px;
+}
+
+.hero-content {
+  margin-top: 50px; margin-bottom: 50px;
+}
+
+.main-container {
+  height: -webkit-fill-available;
+  padding-left: 40px;
+}
+
+.main-container, .project-card, .hero-container, .projects-container, .work-history-container, .education-container, .contact-container, .about-container  {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.education-container, .contact-container, .hero-container {
+  width: 100%;
+}
+
+.content-container, .project-container {
+  width: 87%;
+}
+
+
+.hero-container, .projects-container, .work-history-container, .education-container, .contact-container, .about-container {
+  height: 100vh;
+}
+
+.projects-container, .work-history-container, .education-container {
+  flex: 1;
+}
+
+.about-container, .education-container {
+  background-color: var(--secondary-color);
+}
+
+.projects-container {
+  background-color: var(--content-blue);
+}
+
+.projects-sub-title, .work-history-sub-title, .education-sub-title, .school-container, .contact-sub-title {
+  margin-bottom: 50px;
+}
+
+.project-card {
+  background-color: white;
+  color: var(--off-black);
+  margin-bottom: 40px;
+}
+
+.project-content {
+  padding-top: 20px; padding-bottom: 25px;
+}
+
+.project-content p, .project-technologies, .project-title, .work-history-title, .education-title, .contact-title {
+  margin-bottom: 20px;
+}
+
+.project-title, .project-technologies {
+  text-transform: uppercase;
+}
+
+.project-technologies {
+  list-style-type: none;
+  display: flex;
+  font-size: 14px;
+  font-family: var(--title);
+  font-weight: 500;
+
+}
+
+.project-technologies li {
+  margin-right: 10px;
+}
+
+.job-role, .company, .subject, .school {
+  font-size: 20px;
+}
+
+.year {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+  width: 50%;
+}
+
+.job-description {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.job-container, .work-container, .education-content-container, .full-height {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.contact-link {
+  text-decoration: none;
+}
+
+.mail {
+  color: red;
+}
+
+.linkedin, .linkedin:visited {
+  color: #0a66c2
+}
+
+.side-nav {
+  position: fixed;
+  left: 0; right: 0; top: 0; bottom: 0;
+  width: 40px;
+  height: 100vh;
+  background-color: #555;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.side-nav li {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.li-container {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+
+.active {
+  background:var(--secondary-color);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hide-img {
+  display: none;
+}
+
+.button {
+  background-color: var(--button) !important;
+}
+
+.hero-button {
+  padding: 10px 20px 10px 20px !important;
+  margin-top: 20px !important;
+}
+
+@media screen and (min-width: 460px) {
+
+
+  .hidden, .hide-img {
+    display: block !important;
   }
 }
+
+@media screen and (min-width: 960px) {
+
+  
+  .title {
+    font-size: 48px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .main-container{
+    padding-left: 0px;
+  }
+
+  .hero-container h1{
+    font-size: 72px;
+    line-height: 1.5em;
+    letter-spacing: var(--letter-spacing);
+  }
+  .hero-sub-title {
+    font-size: 48px;
+    margin-bottom:20px;
+  }
+
+  .top-navigation {
+    display: flex;
+    height: 50px;
+    background-color:var(--content-blue);
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    font-family: var(--title);
+    font-weight: 500;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .top-navigation a {
+    padding: 20px 40px 15px 40px;
+  }
+
+  .top-navigation a:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .top-navigation ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;;
+  }
+
+  .project-card {
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 50%;
+    min-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .project-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .project-content {
+    width: 60%;
+    padding-left: 30px; padding-right: 30px;
+  }
+
+  .project-thumbnail {
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .desktop-height {
+    height: 100vh;
+  }
+
+  .center-me, .education-content-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .job-container  {
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  }
+
+  
