@@ -66,7 +66,7 @@ img {
 }
 
 .main-container {
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
   padding-left: 40px;
 }
 
