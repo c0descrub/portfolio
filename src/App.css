@@ -7,11 +7,11 @@
   margin: 0;
 
   --letter-spacing: -2px;
-  --off-black: #473335;
+  --off-black: #1b1b1b;
   --off-white: #FAFCFD;
-  --secondary-color: #CDC2AE;
+  --secondary-color: lightcoral;
   --content-blue: #354259;
-  --button: #CDC2AE;
+  --button: lightcoral;
     --title: 'roboto', sans-serif;
   --content: 'Merriweather', serif;
   --line-break: 1px solid #222;
